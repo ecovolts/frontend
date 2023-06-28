@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@layer base {
+  :root {
+    --color-text-base: #111827;
+    --color-text-muted: #727275;
+    --color-text-inverted: #ffffff;
+    --color-fill-base: #ffffff;
+    --color-fill: #22c55e;
+    --color-fill-hover: #16a34a;
+    --color-button-accent: #ffffff;
+    --color-button-accent-hover: #E5E5E5;
+    --color-button-muted: #bebebf;
+  }
+  .theme-light {
+    --color-text-base: #111827;
+    --color-text-muted: #72727550;
+    --color-text-muted-hover: #59565a;
+    --color-text-inverted: #ffffff;
+    --color-fill-base: #ffffff;
+    --color-fill: #22c55e;
+    --color-fill-hover: #16a34a;
+    --color-fill-accent: #111827;
+    --color-button-accent: #ffffff;
+    --color-button-accent-hover: #E5E5E5;
+    --color-button-muted: #bebebf;
+  }
+  .theme-dark {
+    --color-text-base: #eaeaea;
+    --color-text-muted: #727275;
+    --color-text-muted-hover: #bebebf;
+    --color-text-inverted: #111827;
+    --color-fill-base: #111827;
+    --color-fill: #22c55e;
+    --color-fill-hover: #16a34a;
+    --color-fill-accent: #eaeaea;
+    --color-button-accent: #ffffff;
+    --color-button-accent-hover: #E5E5E5;
+    --color-button-muted: #bebebf;
+  }
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.25rem;
+    height: 0.25rem;
+  }
+
+/* Track */
+::-webkit-scrollbar-track {
+background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #2c2c31;
+border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #2c2c31;
+}
