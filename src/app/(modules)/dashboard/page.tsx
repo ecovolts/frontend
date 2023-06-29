@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/layout/Button'
 import { Edit, Plus } from 'lucide-react'
 
 export default async function Dashboard() {
@@ -11,20 +12,13 @@ export default async function Dashboard() {
           </div>
 
           <div id="sidemenu" className="flex items-center gap-2">
-            <button
-              className="group flex h-9 w-9 items-center justify-center
-              rounded-md bg-green-500 p-1 transition-colors duration-200 ease-linear
-              hover:bg-slate-200"
-            >
+            <Button size="icon" className="bg-green-500 hover:bg-slate-200">
               <Plus className="h-5 w-5 text-zinc-50 group-hover:text-zinc-800" />
-            </button>
-            <button
-              className="group flex h-9 w-9 items-center justify-center rounded-md
-              bg-blue-300 p-1 transition-colors duration-200 ease-linear
-              hover:bg-slate-200"
-            >
+            </Button>
+
+            <Button size="icon" className="bg-blue-300 hover:bg-slate-200">
               <Edit className="h-5 w-5 text-zinc-50 group-hover:text-zinc-800" />
-            </button>
+            </Button>
           </div>
         </section>
 

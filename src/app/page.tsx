@@ -5,7 +5,6 @@ import { BookOpen, Sun, Moon } from 'lucide-react'
 import { useUser } from '@clerk/nextjs'
 
 import { Divider } from '@/components/ui/layout/Divider'
-import { Button } from '@/components/ui/layout/Button'
 import { Card } from '@/components/ui/layout/Card'
 
 import { useUrl } from '@/hooks/useUrl'
@@ -20,6 +19,8 @@ import fronius from '@/assets/fronius-gray.svg'
 import huawei from '@/assets/huawei-gray.svg'
 import weg from '@/assets/weg-gray.svg'
 import byd from '@/assets/byd-gray.svg'
+import Link from 'next/link'
+import { Button } from '@/components/ui/layout/Button'
 
 export default function Home() {
   const { cardData } = useCard()
@@ -49,67 +50,40 @@ export default function Home() {
               alt="Logotipo da Ecovolts"
             />
           </div>
-          {isSignedIn ? (
-            <div className="flex w-full max-w-[9.5rem] items-center gap-2">
-              <Button
-                type="button"
-                as="Button"
-                variant="tertiary"
-                textSize="sm"
-                onClick={handleToggleTheme}
-              >
-                {!toggleTheme ? (
-                  <Moon
-                    size={20}
-                    className="text-skin-base transition-colors duration-150 ease-linear group-hover:text-slate-400"
-                  />
-                ) : (
-                  <Sun
-                    size={20}
-                    className="text-skin-base transition-colors duration-150 ease-linear group-hover:text-amber-500"
-                  />
-                )}
+          <Button type="button" onClick={handleToggleTheme} variant="ghost">
+            {!toggleTheme ? (
+              <Moon
+                size={20}
+                className="text-skin-base transition-colors duration-150 ease-linear group-hover:text-slate-400"
+              />
+            ) : (
+              <Sun
+                size={20}
+                className="text-skin-base transition-colors duration-150 ease-linear group-hover:text-amber-500"
+              />
+            )}
+          </Button>
+          <div
+            className={cn(`flex w-full items-center gap-2`, {
+              'max-w-[9.5rem]': isSignedIn,
+              'max-w-[15rem]': !isSignedIn,
+            })}
+          >
+            {isSignedIn ? (
+              <Button asChild>
+                <Link href="/dashboard">Dashboard</Link>
               </Button>
-              <Button as="Link" textSize="sm" href="/dashboard">
-                Dashboard
-              </Button>
-            </div>
-          ) : (
-            <div className="flex w-full max-w-[15rem] items-center gap-2">
-              <Button
-                type="button"
-                as="Button"
-                variant="tertiary"
-                textSize="sm"
-                size="sm"
-                onClick={handleToggleTheme}
-              >
-                {!toggleTheme ? (
-                  <Moon
-                    size={20}
-                    className="text-skin-base transition-colors duration-150 ease-linear group-hover:text-blue-500"
-                  />
-                ) : (
-                  <Sun
-                    size={20}
-                    className="text-skin-base transition-colors duration-150 ease-linear group-hover:text-amber-500"
-                  />
-                )}
-              </Button>
-              <Button
-                as="Link"
-                variant="secondary"
-                textSize="sm"
-                href="/dashboard"
-                size="sm"
-              >
-                Entrar
-              </Button>
-              <Button as="Link" textSize="sm" size="sm" href="/dashboard">
-                Iniciar
-              </Button>
-            </div>
-          )}
+            ) : (
+              <>
+                <Button variant="secondary" size="sm" asChild>
+                  <Link href="/dashboard">Entrar</Link>
+                </Button>
+                <Button size="sm" asChild>
+                  <Link href="/dashboard">Iniciar</Link>
+                </Button>
+              </>
+            )}
+          </div>
         </div>
       </header>
 
@@ -142,10 +116,10 @@ export default function Home() {
           </article>
 
           <div className="flex w-full max-w-md items-center justify-between gap-4 px-8 pt-4">
-            <Button as="Link" textSize="sm" href="/dashboard">
-              Iniciar seu Projeto
+            <Button asChild>
+              <Link href="/dashboard">Iniciar seu Projeto</Link>
             </Button>
-            <Button type="button" variant="secondary" textSize="sm">
+            <Button variant="secondary">
               <BookOpen size={16} />
               Documentação
             </Button>

@@ -4,6 +4,7 @@ import Link from 'next/link'
 import logo from '@/assets/logo-mixGray.svg'
 import { Underline } from '../SVGElements/Underline'
 import { HeroPattern } from '../SVGElements/HeroPattern'
+import { Button } from '@/components/ui/layout/Button'
 
 export function Hero() {
   return (
@@ -34,14 +35,13 @@ export function Hero() {
           </p>
         </article>
 
-        <Link
-          href="/visao-geral"
-          className="inline-block rounded-full bg-green-500 px-5 py-3 text-sm font-bold
-          uppercase leading-none text-black transition-colors delay-150
-          ease-linear hover:bg-green-700 tablet:hidden laptop:inline-block desktop:inline-block"
+        <Button
+          className="inline-block max-w-max rounded-full px-5 py-3 text-sm font-bold
+          uppercase leading-none text-black tablet:hidden laptop:inline-block desktop:inline-block"
+          asChild
         >
-          Começar Agora
-        </Link>
+          <Link href="/dashboard">Começar Agora</Link>
+        </Button>
       </div>
       <HeroPattern
         className="absolute left-1/2 top-1/2 -translate-y-1/2
