@@ -1,6 +1,6 @@
 import { Edit, Plus } from 'lucide-react'
 
-export default function Dashboard() {
+export default async function Dashboard() {
   return (
     <main className="flex h-screen w-full flex-col items-start bg-skin-fill-base pl-24 pr-8 pt-8">
       <div className="flex w-full flex-col space-y-8">

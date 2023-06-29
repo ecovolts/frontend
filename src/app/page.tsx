@@ -105,7 +105,7 @@ export default function Home() {
               >
                 Entrar
               </Button>
-              <Button as="Link" textSize="sm" size="sm" href="/visao-geral">
+              <Button as="Link" textSize="sm" size="sm" href="/dashboard">
                 Iniciar
               </Button>
             </div>
