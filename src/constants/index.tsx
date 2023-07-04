@@ -1,10 +1,10 @@
 export const STORAGE_KEY = '@ecovolts'
 
 export const STATUS_COLOR = {
-  normal: '#16a34a',
-  offline: '#e85435',
-  semGeracao: '#e41c2b',
-  naoMonitorada: '#09253a',
+  normal: '#00C489',
+  offline: '#FCDC4C',
+  semGeracao: '#F50041',
+  naoMonitorada: '#082A5B',
 }
 
 export const COLUMNS_COLOR = {

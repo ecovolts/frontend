@@ -1,7 +1,8 @@
+import { Status } from '@/components/Status'
 import { Button } from '@/components/ui/layout/Button'
 import { Edit, Plus } from 'lucide-react'
 
-export default async function Dashboard() {
+export default function Dashboard() {
   return (
     <main className="flex h-screen w-full flex-col items-start bg-skin-fill-base pl-24 pr-8 pt-8">
       <div className="flex w-full flex-col space-y-8">
@@ -30,10 +31,11 @@ export default async function Dashboard() {
             <h2 className="text-sm font-semibold">Infos</h2>
           </article>
           <article
-            className="flex min-h-[230px] w-full rounded-md border
-          border-zinc-200 p-5"
+            className="flex min-h-[230px] w-full flex-col gap-4 rounded-md
+          border border-zinc-200 p-5"
           >
             <h2 className="text-sm font-semibold">Status</h2>
+            <Status />
           </article>
         </section>
 

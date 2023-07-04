@@ -19,7 +19,10 @@ export function DonutChart({
   total,
 }: DonutChartProps) {
   return (
-    <div id="chart" className="relative flex max-h-max w-full max-w-[55rem]">
+    <div
+      id="chart"
+      className="relative flex max-h-max w-full max-w-[15.625rem]"
+    >
       <VictoryPie
         innerRadius={90}
         animate={{
@@ -49,8 +52,8 @@ export function DonutChart({
         className="absolute left-1/2 top-1/2 flex -translate-x-1/2
         -translate-y-1/2 flex-col items-center"
       >
-        <span className="text-2xl laptop:text-3xl desktop:text-3xl">Total</span>
-        <span className="text-md text-gray-400 laptop:text-xl desktop:text-xl">
+        <span className="text-xl laptop:text-2xl desktop:text-2xl">Total</span>
+        <span className="text-base text-gray-400 laptop:text-lg desktop:text-lg">
           {total}
         </span>
       </div>

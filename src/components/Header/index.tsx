@@ -5,6 +5,8 @@ import { UserButton } from '@clerk/nextjs'
 
 import logo from '@/assets/logo.svg'
 import Link from 'next/link'
+import { Bell } from 'lucide-react'
+import { DotPulse } from '../ui/layout/DotPulse'
 
 export function Header() {
   return (
@@ -20,17 +22,23 @@ export function Header() {
             alt="Logotipo da Ecovolts"
           />
         </Link>
-        <UserButton
-          afterSignOutUrl="/"
-          showName
-          appearance={{
-            variables: {
-              colorPrimary: 'gray',
-              colorText: 'gray',
-              colorTextSecondary: 'black',
-            },
-          }}
-        />
+        <div className="flex w-max items-center justify-between gap-6 px-2">
+          <div className="flex">
+            <Bell className="h-5 w-5 text-zinc-800" />
+            <DotPulse />
+          </div>
+          <UserButton
+            afterSignOutUrl="/"
+            showName
+            appearance={{
+              variables: {
+                colorPrimary: 'gray',
+                colorText: 'gray',
+                colorTextSecondary: 'black',
+              },
+            }}
+          />
+        </div>
       </div>
     </header>
   )
