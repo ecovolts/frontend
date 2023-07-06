@@ -1,8 +1,8 @@
 import { ReactNode } from 'react'
 
 import { api } from '@/lib/api'
-import { Header } from '@/components/Header'
-import { Sidebar } from '@/components/Sidebar'
+import { Header } from '@/components/ux/Header'
+import { Sidebar } from '@/components/ux/Sidebar'
 
 async function getSession(): Promise<void> {
   await api.get('/users/auth')

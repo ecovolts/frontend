@@ -1,6 +1,6 @@
-import { Copyright } from '@/components/Copyright'
-import { Hero } from '@/components/Hero'
-import { SignIn } from '@/components/Signin'
+import { Copyright } from '@/components/ux/Copyright'
+import { Hero } from '@/components/ux/Hero'
+import { SignIn } from '@/components/ux/Signin'
 import { ReactNode } from 'react'
 
 interface LoginLayoutProps {

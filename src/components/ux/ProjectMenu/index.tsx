@@ -5,7 +5,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from '@/components/ui/sheet'
+} from '@/components/ux/Sheet'
 import { Zap } from 'lucide-react'
 import { ReactNode } from 'react'
 

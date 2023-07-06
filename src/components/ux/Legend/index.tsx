@@ -1,5 +1,5 @@
 import { ElementType } from 'react'
-import { ProgressBar } from '../ProgressBar'
+import { ProgressBar } from '../../ui/layout/ProgressBar'
 
 interface LegendProps {
   active: string

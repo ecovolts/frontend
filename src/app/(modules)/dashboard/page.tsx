@@ -1,4 +1,4 @@
-import { Status } from '@/components/Status'
+import { Status } from '@/components/ux/Status'
 import { Button } from '@/components/ui/layout/Button'
 import { Edit, Plus } from 'lucide-react'
 

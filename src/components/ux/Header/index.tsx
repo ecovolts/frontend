@@ -6,7 +6,7 @@ import { UserButton } from '@clerk/nextjs'
 import logo from '@/assets/logo.svg'
 import Link from 'next/link'
 import { Bell } from 'lucide-react'
-import { DotPulse } from '../ui/layout/DotPulse'
+import { DotPulse } from '@/components/ui/layout/DotPulse'
 
 export function Header() {
   return (

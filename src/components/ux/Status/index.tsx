@@ -5,7 +5,7 @@ import { CheckCircle, LightbulbOff, MonitorOff, Unplug } from 'lucide-react'
 
 import { STATUS_COLOR } from '@/constants'
 import { DonutChart } from '../Charts/DonutChart'
-import { Legend } from '../ui/layout/Legend'
+import { Legend } from '../Legend'
 
 const initialDonuts = [
   {

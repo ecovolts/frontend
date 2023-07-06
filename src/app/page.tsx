@@ -1,11 +1,13 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { BookOpen, Sun, Moon } from 'lucide-react'
 import { useUser } from '@clerk/nextjs'
 
 import { Divider } from '@/components/ui/layout/Divider'
-import { Card } from '@/components/ui/layout/Card'
+import { Button } from '@/components/ui/layout/Button'
+import { Card } from '@/components/ux/Card'
 
 import { useUrl } from '@/hooks/useUrl'
 import { useCard } from '@/hooks/useCard'
@@ -19,8 +21,6 @@ import fronius from '@/assets/fronius-gray.svg'
 import huawei from '@/assets/huawei-gray.svg'
 import weg from '@/assets/weg-gray.svg'
 import byd from '@/assets/byd-gray.svg'
-import Link from 'next/link'
-import { Button } from '@/components/ui/layout/Button'
 
 export default function Home() {
   const { cardData } = useCard()
