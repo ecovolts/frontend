@@ -11,7 +11,8 @@ export default function AuthLayout({ children }: LoginLayoutProps) {
   return (
     <main
       className="min-h-screen bg-gray-900 tablet:flex tablet:flex-col
-      laptop:grid laptop:grid-cols-2 desktop:grid-cols-2"
+      laptop:grid laptop:grid-cols-2 laptop-sm:grid-cols-2
+      desktop:grid-cols-2"
     >
       {/* Left */}
       <section

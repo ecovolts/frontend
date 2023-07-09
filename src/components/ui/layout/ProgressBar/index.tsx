@@ -1,5 +1,3 @@
-import { cn } from '@/utils/helpers'
-
 interface ProgressBarProps {
   progress: number
   color?: string

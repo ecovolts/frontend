@@ -19,7 +19,7 @@ export function Hero() {
         </figure>
 
         <article
-          className="hidden max-w-[420px] space-y-1 font-alt text-gray-50
+          className="hidden max-w-[26.25rem] space-y-1 font-alt text-gray-50
           laptop:flex laptop:flex-col desktop:flex desktop:flex-col"
         >
           <h1 className="text-5xl font-bold leading-tight text-gray-50">

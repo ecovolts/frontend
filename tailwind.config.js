@@ -17,7 +17,10 @@ module.exports = {
         mobile: '40rem',
         tablet: '48rem',
         laptop: '80rem',
+        'laptop-sm': '85.375rem',
+        'laptop-md': '90rem',
         desktop: '96rem',
+        '4k': '240rem',
       },
 
       colors: {
@@ -50,6 +53,7 @@ module.exports = {
         blue: {
           baby: '#F4F5F9',
           sheet: '#E4E8F5',
+          soft: '#E9EFFD',
         },
 
         green: {
@@ -107,6 +111,13 @@ module.exports = {
         scale: {
           600: 'var(--tw-gradient-from), var(--colors-scale6) var(--tw-gradient-via-position),var(--tw-gradient-to)',
         },
+      },
+
+      maxWidth: {
+        '8xl': '85.375rem',
+        '9xl': '90rem',
+        '10xl': '96rem',
+        '11xl': '1920px',
       },
 
       backgroundColor: {

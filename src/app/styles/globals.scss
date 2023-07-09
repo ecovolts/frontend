@@ -16,7 +16,7 @@ body {
     --color-fill: #22c55e;
     --color-fill-hover: #16a34a;
     --color-button-accent: #ffffff;
-    --color-button-accent-hover: #E5E5E5;
+    --color-button-accent-hover: #e5e5e5;
     --color-button-muted: #bebebf;
   }
   .theme-light {
@@ -29,7 +29,7 @@ body {
     --color-fill-hover: #16a34a;
     --color-fill-accent: #111827;
     --color-button-accent: #ffffff;
-    --color-button-accent-hover: #E5E5E5;
+    --color-button-accent-hover: #e5e5e5;
     --color-button-muted: #bebebf;
   }
   .theme-dark {
@@ -42,7 +42,7 @@ body {
     --color-fill-hover: #16a34a;
     --color-fill-accent: #eaeaea;
     --color-button-accent: #ffffff;
-    --color-button-accent-hover: #E5E5E5;
+    --color-button-accent-hover: #e5e5e5;
     --color-button-muted: #bebebf;
   }
 }
@@ -62,22 +62,22 @@ select:-webkit-autofill:focus {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 0.25rem;
-    height: 0.25rem;
-  }
+  width: 0.25rem;
+  height: 0.25rem;
+}
 
 /* Track */
 ::-webkit-scrollbar-track {
-background: transparent;
+  background: transparent;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-background: #2c2c31;
-border-radius: 1rem;
+  background: #707070;
+  border-radius: 1rem;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-background: #2c2c31;
+  background: #707070;
 }

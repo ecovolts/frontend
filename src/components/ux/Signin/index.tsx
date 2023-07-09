@@ -12,7 +12,7 @@ export function SignIn() {
     >
       <div
         className="flex h-10 w-10 items-center justify-center
-            rounded-full bg-white"
+        rounded-full bg-white"
       >
         <Google className="text-red-500" size={32} weight="fill" />
       </div>

@@ -16,12 +16,20 @@ export default async function ModulesLayout({
   await getSession()
 
   return (
-    <div className="grid h-screen grid-cols-1 bg-skin-fill-base text-gray-800">
-      <div className="flex w-full flex-col">
+    <div
+      className="mx-auto min-h-screen justify-center bg-gradient-to-r from-teal-200
+      to-lime-200 px-6 py-8 text-gray-800"
+    >
+      <div className="mx-auto flex max-h-[1080px] max-w-10xl flex-col">
         <Header />
-        <div className="mt-[4.0625rem] flex flex-1">
+        <div
+          className="mx-auto grid min-h-[85vh] w-full overflow-y-hidden rounded-b-xl
+          bg-white shadow-lg backdrop-blur lg:grid-cols-[5rem_1fr] 2xl:grid-cols-[15rem_1fr]
+          laptop-sm:min-h-[80vh] laptop-sm:grid-cols-[15rem_1fr] laptop-md:min-h-[80vh]
+          laptop-md:grid-cols-[15rem_1fr] desktop:min-h-[85vh]"
+        >
           <Sidebar />
-          {children}
+          <main className="flex">{children}</main>
         </div>
       </div>
     </div>
