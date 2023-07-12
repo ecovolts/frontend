@@ -14,7 +14,7 @@ import { useCard } from '@/hooks/useCard'
 import { useTheme } from '@/hooks/useTheme'
 import { useStorage } from '@/hooks/useStorage'
 
-import { cn } from '@/utils/helpers'
+import { cn } from '@/lib/utils'
 
 import logo from '@/assets/logo.svg'
 import fronius from '@/assets/fronius-gray.svg'

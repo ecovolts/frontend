@@ -2,7 +2,7 @@
 
 import { FormEvent, forwardRef, ReactNode, InputHTMLAttributes } from 'react'
 
-import { cn } from '@/utils/helpers'
+import { cn } from '@/lib/utils'
 
 interface TextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
   leftIcon?: ReactNode

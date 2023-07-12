@@ -27,7 +27,7 @@ export function ProjectMenu({ children }: { children: ReactNode }) {
         </SheetHeader>
 
         <div className="flex w-full flex-col gap-4">
-          <button className="group flex rounded-md bg-zinc-100 p-2 shadow-sm transition-colors delay-75 duration-300 ease-linear selection:bg-zinc-800 hover:bg-blue-500">
+          <button className="group flex rounded-md bg-zinc-100 p-2 shadow-sm transition-colors duration-300 delay-75 ease-linear selection:bg-zinc-800 hover:bg-blue-500">
             <div className="flex items-center gap-4">
               <div
                 className="flex h-9 w-9 items-center justify-center rounded-md
@@ -41,7 +41,7 @@ export function ProjectMenu({ children }: { children: ReactNode }) {
             </div>
           </button>
 
-          <button className="group flex rounded-md bg-zinc-100 p-2 shadow-sm transition-colors delay-75 duration-300 ease-linear selection:bg-zinc-800 hover:bg-blue-500">
+          <button className="group flex rounded-md bg-zinc-100 p-2 shadow-sm transition-colors duration-300 delay-75 ease-linear selection:bg-zinc-800 hover:bg-blue-500">
             <div className="flex items-center gap-4">
               <div
                 className="flex h-9 w-9 items-center justify-center rounded-md
